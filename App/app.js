@@ -1,3 +1,4 @@
+// npm install mongodb
 class items
 {
   constructor(id, name, description, price, units)
@@ -55,17 +56,17 @@ async function setup()
     {
       console.log("collection with name already exists");
     }
-    
-    await add(db, collectionName);
-    await read(db);
 
-    await update(db, 1);
-    await read(db);
+    // await add(db, collectionName);
+    // await read(db);
 
-    await remove(db);
-    await read(db);
+    // await update(db, 1);
+    // await read(db);
 
+    // await remove(db);
+    // await read(db);
     console.log("database setup successfully complete...");
+    return db;
   }
   catch(error)
   {
@@ -77,5 +78,5 @@ async function setup()
 }
 
 
-connect();
+//connect();
 module.exports = {connect};
