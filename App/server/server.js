@@ -38,7 +38,7 @@ async function startServer() {
     //addRoutes(app, db, ObjectId);
     //removeRoutes(app, db, ObjectId);
     //updateRoutes(app, db, ObjectId);
-    //readRoutes(app, db, ObjectId);
+    readRoutes(app, db);
 
     app.listen(port, () => {
       console.log(`Server running at http://localhost:${port}`);
